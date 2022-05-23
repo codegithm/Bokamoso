@@ -248,6 +248,7 @@ html {
   }
 }
 .float {
+  cursor: pointer;
   position: fixed;
   width: 40px;
   display: none;
@@ -281,4 +282,9 @@ html {
   animation-name: FadeIn;
   animation-duration: 1s;
   transition-timing-function: ease-in-out;
+}
+.social a {
+  cursor: pointer;
+  text-decoration: none;
+  color: #fff;
 }

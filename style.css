@@ -1,0 +1,281 @@
+html {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  max-width: 100vw;
+}
+.navbar {
+  height: 90px;
+  position: fixed;
+  width: 100vw;
+  z-index: 3;
+}
+.row {
+  padding-top: 90px;
+}
+.pic,
+.about_us,
+.services {
+  height: 85vh;
+}
+.contact_us_title {
+  color: #fff;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+.social {
+  color: #fff;
+}
+.pic {
+  background-image: url(./different-types-of-accounting-systems.jpg.optimal.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.about_us,
+.financial {
+  background-color: rgb(12, 12, 85);
+  padding-top: 30px;
+  color: #fff;
+}
+.container-fluid img {
+  width: 155px;
+}
+.financial h1 {
+  font-size: 30px;
+}
+.services {
+  background-color: white;
+  color: rgb(12, 12, 85);
+  padding-left: 30px;
+  padding-right: 30px;
+  padding-top: 30px;
+}
+.services li {
+  padding-left: 30px;
+  font-size: 14px;
+  font-weight: 500;
+}
+.services p {
+  font-size: 13px;
+  font-weight: 700;
+}
+.contact_us {
+  background-color: red;
+  min-height: 199px;
+  height: auto;
+  z-index: 5;
+  padding-left: 30px;
+  padding-right: 30px;
+  padding-bottom: 30px;
+}
+.contact_us_cont {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  font-size: 14px;
+}
+.about_us_title {
+  display: flex;
+  flex-direction: column;
+}
+
+.about_us_line {
+  border-style: solid;
+  width: 37px;
+  border-width: 1px;
+  color: #fff;
+}
+.about_spacer,
+.about_us p {
+  color: #fff;
+  margin-bottom: 3px;
+  font-size: 13px;
+}
+.spacer {
+  height: 8px;
+}
+.services h1 {
+  font-size: 18px;
+  width: 280px;
+}
+.cell,
+.e-mail,
+.postal,
+.site {
+  color: #fff;
+}
+.contact_us h3 {
+  font-size: 20px;
+  margin-bottom: 0px;
+}
+.compliance {
+  padding-top: 30px;
+  padding-left: 40px;
+  height: 100vh;
+}
+.compliance h1 {
+  color: rgb(160, 11, 11);
+  font-size: 30px;
+}
+.compliance p i {
+  font-weight: 700;
+}
+@media screen and (min-width: 989px) {
+  .about_us,
+  .services,
+  .financial,
+  .compliance,
+  .contact_us {
+    padding-left: 40px;
+    padding-right: 40px;
+  }
+  .about_us p {
+    font-size: 17px !important;
+  }
+}
+@media screen and (max-width: 989px) {
+  .about_us,
+  .contact_us,
+  .compliance,
+  .financial {
+    padding-right: 30px;
+  }
+  .services {
+    padding-top: 28px;
+    height: auto;
+  }
+  .compliance {
+    height: auto;
+  }
+}
+@media screen and (max-width: 653px) {
+  .about_spacer,
+  .about_us p {
+    font-size: 14px !important;
+  }
+}
+@media screen and (max-width: 583px) {
+  .about_spacer,
+  .about_us p {
+    font-size: 13px !important;
+  }
+}
+@media screen and (max-width: 545px) {
+  .about_spacer,
+  .about_us p {
+    font-size: 13px !important;
+  }
+  .services li {
+    font-size: 15px !important;
+  }
+  .services p {
+    font-size: 15px !important;
+  }
+  .compliance h1 {
+    font-size: 23px !important;
+  }
+  .compliance p i {
+    font-size: 14px;
+  }
+  .compliance li,
+  .financial li {
+    font-size: 13px;
+  }
+  .services {
+    padding-top: 28px;
+    height: auto;
+  }
+  .financial h1 {
+    font-size: 21px;
+  }
+  .about_us {
+    padding-top: 30px;
+  }
+  .about_spacer,
+  .about_us p {
+    font-size: 12.3px !important;
+  }
+}
+@media screen and (min-width: 767px) {
+  .pic,
+  .about_us,
+  .services {
+    height: auto;
+  }
+}
+@media screen and (max-width: 767px) {
+  .about_us,
+  .financial,
+  .compliance,
+  .services {
+    padding-left: 30px;
+  }
+  .contact_us {
+    padding-left: 20px;
+  }
+  .about_spacer,
+  .about_us p {
+    color: #fff;
+    margin-bottom: 3px;
+    font-size: 15px;
+  }
+  .pic {
+    height: 172px;
+  }
+  .about_us {
+    height: auto;
+    padding-bottom: 20px;
+  }
+
+  .services h1 {
+    font-size: 22px;
+    width: 100%;
+  }
+  .services li {
+    padding-left: 30px;
+    font-size: 17px;
+    font-weight: 500;
+  }
+  .services p {
+    font-size: 16px;
+    font-weight: 700;
+  }
+}
+.float {
+  position: fixed;
+  width: 40px;
+  display: none;
+  height: 40px;
+  bottom: 40px;
+  right: 40px;
+  background-color: #df3746;
+  color: #fff;
+  border-radius: 50px;
+  text-align: center;
+  /* box-shadow: 2px 2px 3px #999; */
+  align-items: center;
+  justify-content: center;
+  transition-property: display;
+  transition-duration: 2s;
+  transition-timing-function: ease-in-out;
+}
+
+.my-float {
+  margin-top: 22px;
+}
+@keyframes FadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+.float {
+  animation-name: FadeIn;
+  animation-duration: 1s;
+  transition-timing-function: ease-in-out;
+}

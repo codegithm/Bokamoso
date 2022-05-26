@@ -288,3 +288,9 @@ html {
   text-decoration: none;
   color: #fff;
 }
+.cell a,
+.e-mail a {
+  text-decoration: none;
+  color: #fff;
+  font-weight: 400;
+}

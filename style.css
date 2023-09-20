@@ -126,6 +126,65 @@ html {
 .compliance p i {
   font-weight: 700;
 }
+
+.our-services-header-cont .underline,
+.our-workshops-header-cont .underline {
+  width: 212px;
+  height: 14px;
+  flex-shrink: 0;
+  background: #b40000;
+}
+.our-services-colums {
+  display: flex;
+}
+.our-services-colums .card {
+  width: 239px;
+  height: 188px;
+  flex-shrink: 0;
+  border-radius: 30px;
+}
+
+.our-services-colums .support {
+  border-radius: 30px;
+  border: 9px solid #141045;
+}
+.our-services-colums .assessments {
+  border-radius: 30px;
+  border: 9px solid #b40000;
+}
+.our-services-colums .workshop {
+  border-radius: 30px;
+  border: 9px solid #141045;
+}
+.our-services-colums .business {
+  border-radius: 30px;
+  border: 9px solid #b40000;
+}
+
+.our-services-colums .column1,
+.our-services-colums .column2 {
+  width: 50%;
+}
+.our-services-colums .column2 {
+  gap: 10px;
+}
+.our-services-colums .column1 {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.our-services-colums .column2 {
+  display: flex;
+  flex-wrap: wrap;
+}
+.column2 .card-body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.column2 .card-text {
+  text-align: center;
+}
 @media screen and (min-width: 989px) {
   .about_us,
   .services,

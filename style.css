@@ -351,8 +351,9 @@ p {
   }
 }
 @media screen and (max-width: 545px) {
-  .column-image img {
-    display: none;
+  .about-us-column {
+    display: flex;
+    flex-direction: column;
   }
   .about-us-column {
     padding: 0px 10px;

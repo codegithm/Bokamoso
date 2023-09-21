@@ -253,6 +253,12 @@ p {
   gap: 10px;
   justify-content: center;
 }
+.blue-box {
+  width: 100vw;
+  height: 91px;
+  flex-shrink: 0;
+  background: #141045;
+}
 @media screen and (min-width: 989px) {
   .about_us,
   .services,
@@ -264,6 +270,15 @@ p {
   }
   .about_us p {
     font-size: 17px !important;
+  }
+}
+@media screen and (max-width: 373px) {
+  .our-services-colums .card {
+    width: 168px !important;
+    height: 121px !important;
+  }
+  .our-services-colums .card p {
+    font-size: 15px !important;
   }
 }
 @media screen and (max-width: 989px) {
@@ -302,6 +317,12 @@ p {
     height: auto;
   }
 }
+@media screen and (min-width: 373px) and (max-width: 653px) {
+  .our-services-colums .card {
+    width: 224px !important;
+    height: 143px !important;
+  }
+}
 @media screen and (max-width: 653px) {
   .our-services-colums {
     flex-direction: column;
@@ -311,11 +332,6 @@ p {
   .our-services-colums .column2 {
     width: 100%;
   }
-  .our-services-colums .card {
-    width: 224px !important;
-    height: 143px !important;
-  }
-
   .about_spacer,
   .about_us p {
     font-size: 14px !important;
@@ -370,17 +386,19 @@ p {
     height: auto;
   }
 }
-@media screen and (max-width: 472px) {
+@media screen and (min-width: 373px) and (max-width: 472px) {
   .our-services-colums .card {
     width: 182px !important;
     height: 125px !important;
   }
 }
-@media screen and (max-width: 767px) {
+@media screen and (min-width: 373px) and (max-width: 767px) {
   .our-services-colums .card {
     width: 172px;
     height: 131px;
   }
+}
+@media screen and (max-width: 767px) {
   .worksop-section .card p {
     font-size: 13px !important;
   }

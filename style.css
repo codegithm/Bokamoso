@@ -126,7 +126,10 @@ html {
 .compliance p i {
   font-weight: 700;
 }
-
+.our-services-section,
+.about-us-section {
+  padding: 0px 0px 20px 0px;
+}
 .our-services-header-cont .underline,
 .our-workshops-header-cont .underline {
   width: 212px;
@@ -259,6 +262,10 @@ p {
   flex-shrink: 0;
   background: #141045;
 }
+
+.about-us-column {
+  display: flex;
+}
 @media screen and (min-width: 989px) {
   .about_us,
   .services,
@@ -344,6 +351,12 @@ p {
   }
 }
 @media screen and (max-width: 545px) {
+  .column-image img {
+    display: none;
+  }
+  .about-us-column {
+    padding: 0px 10px;
+  }
   .about_spacer,
   .about_us p {
     font-size: 13px !important;

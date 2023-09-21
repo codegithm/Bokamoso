@@ -4,12 +4,12 @@ html {
   margin: 0;
   max-width: 100vw;
 }
-.navbar {
+/* .navbar {
   height: 90px;
   position: fixed;
   width: 100vw;
   z-index: 3;
-}
+} */
 .row {
   padding-top: 90px;
   max-width: 100vw;
@@ -136,6 +136,7 @@ html {
 }
 .our-services-colums {
   display: flex;
+  flex-wrap: wrap;
 }
 .our-services-colums .card {
   width: 239px;
@@ -143,7 +144,14 @@ html {
   flex-shrink: 0;
   border-radius: 30px;
 }
-
+.view-more {
+  color: #b40000;
+  font-family: Istok Web;
+  font-size: 25px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
 .our-services-colums .support {
   border-radius: 30px;
   border: 9px solid #141045;
@@ -172,10 +180,12 @@ html {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  padding: 0px 20px;
 }
 .our-services-colums .column2 {
   display: flex;
   flex-wrap: wrap;
+  justify-content: center;
 }
 .column2 .card-body {
   display: flex;
@@ -184,6 +194,64 @@ html {
 }
 .column2 .card-text {
   text-align: center;
+}
+
+p {
+  color: #141045;
+  font-family: Istok Web;
+  font-size: 25px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+.our-services-header-cont,
+.our-workshops-header-cont {
+  margin: 20px 0px;
+}
+.worksop-section .card {
+  width: 47%;
+  height: auto;
+  flex-shrink: 0;
+  min-height: 238px;
+}
+.worksop-section .card-body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.workshop-section {
+  background: rgba(217, 217, 217, 0.18);
+  padding: 20px 0;
+}
+.worksop-section .business,
+.worksop-section .finance {
+  border-radius: 30px;
+}
+.worksop-section .finance {
+  background: #b40000;
+}
+.worksop-section .business {
+  background: #141045;
+}
+.worksop-section .card h5,
+.worksop-section .card p {
+  color: #fff;
+  font-family: Istok Web;
+  font-style: normal;
+  line-height: normal;
+}
+.worksop-section .card h5 {
+  font-size: 42px;
+  font-weight: 700;
+}
+.worksop-section .card p {
+  font-size: 18px;
+  font-weight: 400;
+}
+.worksop-section {
+  display: flex;
+  gap: 10px;
+  justify-content: center;
 }
 @media screen and (min-width: 989px) {
   .about_us,
@@ -199,6 +267,27 @@ html {
   }
 }
 @media screen and (max-width: 989px) {
+  .worksop-section .card h5 {
+    font-size: 25px !important;
+  }
+  .worksop-section .card p,
+  .view-more {
+    font-size: 16px !important;
+  }
+  p {
+    font-size: 19px;
+  }
+
+  .our-services-colums .card {
+    width: 189px;
+    height: 148px;
+    flex-shrink: 0;
+    border-radius: 30px;
+  }
+  .our-services-colums .card p {
+    font-size: 18px;
+  }
+
   .about_us,
   .contact_us,
   .compliance,
@@ -214,6 +303,19 @@ html {
   }
 }
 @media screen and (max-width: 653px) {
+  .our-services-colums {
+    flex-direction: column;
+    gap: 20px;
+  }
+  .our-services-colums .column1,
+  .our-services-colums .column2 {
+    width: 100%;
+  }
+  .our-services-colums .card {
+    width: 224px !important;
+    height: 143px !important;
+  }
+
   .about_spacer,
   .about_us p {
     font-size: 14px !important;
@@ -268,7 +370,24 @@ html {
     height: auto;
   }
 }
+@media screen and (max-width: 472px) {
+  .our-services-colums .card {
+    width: 182px !important;
+    height: 125px !important;
+  }
+}
 @media screen and (max-width: 767px) {
+  .our-services-colums .card {
+    width: 172px;
+    height: 131px;
+  }
+  .worksop-section .card p {
+    font-size: 13px !important;
+  }
+  .worksop-section .card h5 {
+    font-size: 15px !important;
+  }
+
   .about_us,
   .financial,
   .compliance,

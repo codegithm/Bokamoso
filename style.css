@@ -1,15 +1,17 @@
-html {
+html,
+body {
   box-sizing: border-box;
   padding: 0;
   margin: 0;
   max-width: 100vw;
+  overflow-x: hidden;
 }
-/* .navbar {
+.navbar {
   height: 90px;
   position: fixed;
   width: 100vw;
   z-index: 3;
-} */
+}
 .row {
   padding-top: 90px;
   max-width: 100vw;
@@ -41,7 +43,7 @@ html {
   color: #fff;
 }
 .container-fluid img {
-  width: 155px;
+  width: 120px;
 }
 .financial h1 {
   font-size: 30px;
@@ -265,6 +267,190 @@ p {
 
 .about-us-column {
   display: flex;
+}
+
+.services-button-cont .card {
+  width: 239px;
+  height: 188px;
+  flex-shrink: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 30px;
+  cursor: pointer;
+}
+.services-button-cont .card-body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.services-button-cont .card-text {
+  text-align: center;
+  font-weight: 700 !important;
+}
+.button1 {
+  width: 45px;
+  height: 38px;
+}
+.active-button {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+.background-image {
+  height: 251px;
+  background-image: url("./images/slide.png");
+  background-repeat: no-repeat;
+  background-size: auto;
+  margin-top: 90px;
+}
+.blue-red {
+  display: flex;
+  width: 100vw;
+  height: 16px;
+}
+.blue-red .red {
+  width: 50%;
+  height: 100%;
+  background: #b40000;
+}
+.blue-red .blue {
+  width: 50%;
+  height: 100%;
+  background: #141045;
+}
+.services-button {
+  display: flex;
+  gap: 20px;
+  padding-left: 20px;
+}
+
+.our-services-content {
+  padding: 20px;
+}
+.support-content li {
+  color: #ffff;
+}
+.support-content {
+  color: #fff;
+  font-family: Istok Web;
+}
+.red-bg {
+  background: #b40000;
+}
+.blue-bg {
+  background: #141045;
+}
+.our-services-expl {
+  padding: 20px;
+  max-width: 1097px;
+}
+.contact-us-cont {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.navbar > .container,
+.navbar > .container-fluid,
+.navbar > .container-lg,
+.navbar > .container-md,
+.navbar > .container-sm,
+.navbar > .container-xl,
+.navbar > .container-xxl {
+  background: #ffff;
+}
+.navbar-collapse {
+  padding: 20px;
+  background: #fff;
+}
+.mobile {
+  display: none;
+}
+@media screen and (max-width: 653px) {
+  .mobile {
+    display: block;
+  }
+  .desktop {
+    display: none;
+  }
+}
+@media screen and (max-width: 1056px) {
+  .services-button-cont .card {
+    width: 173px !important;
+    height: 137px !important;
+  }
+  .services-button-cont .card-text {
+    font-size: 14px !important;
+  }
+  .button1 {
+    width: 30px;
+    height: 15px;
+  }
+}
+@media screen and (max-width: 421px) {
+  .services-button-cont .card {
+    width: 75px !important;
+    height: 60px !important;
+    border-radius: 9px !important;
+    border-width: 3px !important;
+  }
+}
+@media screen and (min-width: 421px) and (max-width: 504px) {
+  .services-button-cont .card {
+    width: 90px !important;
+    height: 73px !important;
+    border-radius: 21px !important;
+    border-width: 3px !important;
+  }
+}
+@media screen and (max-width: 504px) {
+  .button1 {
+    width: 21px;
+    height: 8px;
+  }
+  .services-button-cont .card-body {
+    padding: 0 !important;
+  }
+}
+@media screen and (max-width: 800px) {
+  .services-button-cont .card-text {
+    font-size: 14px !important;
+  }
+}
+@media screen and (min-width: 656px) and (max-width: 800px) {
+  .services-button-cont .card {
+    width: 140px !important;
+    height: 111px !important;
+  }
+}
+@media screen and (min-width: 504px) and (max-width: 800px) {
+  .services-button-cont .card {
+    border-width: 5px !important;
+  }
+  .button1 {
+    width: 28px;
+    height: 13px;
+  }
+}
+@media screen and (min-width: 572px) and (max-width: 656px) {
+  .services-button-cont .card {
+    width: 119px !important;
+    height: 98px !important;
+  }
+}
+@media screen and (min-width: 504px) and (max-width: 572px) {
+  .services-button-cont .card {
+    width: 110px !important;
+    height: 86px !important;
+  }
+}
+@media screen and (max-width: 572px) {
+  .services-button-cont .card-text {
+    font-size: 11px !important;
+  }
+  .services-button {
+    gap: 9px !important;
+  }
 }
 @media screen and (min-width: 989px) {
   .about_us,

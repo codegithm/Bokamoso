@@ -534,6 +534,24 @@ p {
     font-size: 15px !important;
   }
 }
+@media screen and (max-width: 880px) {
+  .about-us-column {
+    flex-direction: column;
+    padding-left: 20px;
+  }
+}
+@media screen and (min-width: 880px) {
+  .column-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+}
+@media screen and (min-width: 545px) and (max-width: 1200pz) {
+  .column-image img {
+    width: 400px !important;
+  }
+}
 @media screen and (max-width: 989px) {
   .worksop-section .card h5 {
     font-size: 25px !important;
@@ -600,6 +618,9 @@ p {
   }
 }
 @media screen and (max-width: 545px) {
+  .column-image img {
+    width: 100% !important;
+  }
   .about-us-column {
     display: flex;
     flex-direction: column;

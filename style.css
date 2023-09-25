@@ -12,6 +12,15 @@ body {
   width: 100vw;
   z-index: 3;
 }
+.nav-link {
+  color: #272362;
+  font-family: Istok Web;
+  font-size: 21px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  text-transform: uppercase;
+}
 .row {
   padding-top: 90px;
   max-width: 100vw;
@@ -150,12 +159,19 @@ body {
   border-radius: 30px;
 }
 .view-more {
-  color: #b40000;
+  /* color: #b40000; */
   font-family: Istok Web;
-  font-size: 25px;
+  font-size: 23px;
   font-style: normal;
   font-weight: 400;
   line-height: normal;
+  background: #b40000;
+  display: flex;
+  justify-content: center;
+  border-radius: 35px;
+  color: #ffff;
+  width: 286px;
+  text-decoration: none;
 }
 .our-services-colums .support {
   border-radius: 30px;
@@ -191,6 +207,18 @@ body {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
+  max-width: 633px;
+}
+.hire-us {
+  background: #b40000;
+  color: #ffff;
+  width: 192px;
+  height: 131px;
+  border: 0;
+  flex-shrink: 0;
+  position: fixed;
+  z-index: 100000;
+  right: 54px;
 }
 .column2 .card-body {
   display: flex;
@@ -211,7 +239,11 @@ p {
 }
 .our-services-header-cont,
 .our-workshops-header-cont {
-  margin: 20px 0px;
+  margin: 20px 20px;
+}
+.our-services-header-cont h1,
+.our-workshops-header-cont h1 {
+  margin-left: 10px;
 }
 .worksop-section .card {
   width: 47%;
@@ -301,7 +333,7 @@ p {
   height: 251px;
   background-image: url("./images/slide.png");
   background-repeat: no-repeat;
-  background-size: auto;
+  background-size: cover;
   margin-top: 90px;
 }
 .blue-red {
@@ -313,6 +345,9 @@ p {
   width: 50%;
   height: 100%;
   background: #b40000;
+}
+.hire-mobile {
+  display: none;
 }
 .blue-red .blue {
   width: 50%;
@@ -363,8 +398,33 @@ p {
   padding: 20px;
   background: #fff;
 }
+.hire-mobile {
+  background: #b40000;
+  padding-left: 10px;
+  border-top: 2px solid grey;
+}
 .mobile {
-  display: none;
+  display: none !important;
+}
+@media screen and (min-width: 1044px) {
+  .navbar-expand-lg .navbar-nav {
+    gap: 50px;
+  }
+}
+@media screen and (max-width: 991px) {
+  .navbar-brand {
+    margin-right: 150px !important;
+  }
+
+  .hire-us {
+    display: none !important;
+  }
+  .hire-mobile {
+    display: block !important;
+  }
+  .hire-mobile a {
+    color: #ffff !important;
+  }
 }
 @media screen and (max-width: 653px) {
   .mobile {
@@ -481,6 +541,9 @@ p {
   .worksop-section .card p,
   .view-more {
     font-size: 16px !important;
+  }
+  .view-more {
+    width: 222px;
   }
   p {
     font-size: 19px;

@@ -406,6 +406,12 @@ p {
 .mobile {
   display: none !important;
 }
+.service-checkbox {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 10px 0;
+  gap: 10px;
+}
 @media screen and (min-width: 1044px) {
   .navbar-expand-lg .navbar-nav {
     gap: 50px;

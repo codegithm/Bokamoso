@@ -20,7 +20,13 @@
   </head>
   <body>
     <!--Hire Us-->
-    <button class="hire-us desktop">HIRE US</button>
+    <button
+      class="hire-us desktop"
+      data-bs-toggle="modal"
+      data-bs-target="#exampleModal"
+    >
+      HIRE US
+    </button>
     <!--Nav Start-->
     <nav
       class="navbar navbar-expand-lg bg-body-secondary bg-light"
@@ -57,7 +63,13 @@
               <a class="nav-link" href="#">CONTACT US</a>
             </li>
             <li class="nav-item hire-mobile">
-              <a class="nav-link" href="#">HIRE US</a>
+              <a
+                class="nav-link"
+                href="#"
+                data-bs-toggle="modal"
+                data-bs-target="#exampleModal"
+                >HIRE US</a
+              >
             </li>
           </ul>
         </div>
@@ -288,6 +300,119 @@
       </div>
     </section>
     <!--Contact us end-->
+    <!-- Modal -->
+    <div
+      class="modal fade"
+      id="exampleModal"
+      tabindex="-1"
+      aria-labelledby="exampleModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h1 class="modal-title fs-5" id="exampleModalLabel">HIRE US</h1>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="modal-body">
+            <form>
+              <div class="input-group mb-3">
+                <input
+                  type="text"
+                  class="form-control"
+                  placeholder="First Name"
+                  aria-label="First Name"
+                  aria-describedby="basic-addon2"
+                  required
+                />
+              </div>
+              <div class="input-group mb-3">
+                <input
+                  type="text"
+                  class="form-control"
+                  placeholder="Last Name"
+                  aria-label="Last Name"
+                  aria-describedby="basic-addon2"
+                  required
+                />
+              </div>
+              <div class="input-group mb-3">
+                <input
+                  type="tel"
+                  class="form-control"
+                  placeholder="Phone Number"
+                  aria-label="Phone Number"
+                  aria-describedby="basic-addon2"
+                  required
+                  minlength="10"
+                />
+              </div>
+              <div class="input-group mb-3">
+                <input
+                  type="email"
+                  class="form-control"
+                  placeholder="Email Address"
+                  aria-label="Email Address"
+                  aria-describedby="basic-addon2"
+                  required
+                />
+              </div>
+              <div class="service-checkbox">
+                <input
+                  type="checkbox"
+                  class="btn-check"
+                  id="btncheck1"
+                  autocomplete="off"
+                />
+                <label class="btn btn-outline-primary" for="btncheck1"
+                  >Back Office Support</label
+                >
+                <input
+                  type="checkbox"
+                  class="btn-check"
+                  id="btncheck2"
+                  autocomplete="off"
+                />
+                <label class="btn btn-outline-primary" for="btncheck2"
+                  >Investors Readiness Assessments</label
+                >
+                <input
+                  type="checkbox"
+                  class="btn-check"
+                  id="btncheck3"
+                  autocomplete="off"
+                />
+                <label class="btn btn-outline-primary" for="btncheck3"
+                  >Trainings & Workshops</label
+                >
+                <input
+                  type="checkbox"
+                  class="btn-check"
+                  id="btncheck4"
+                  autocomplete="off"
+                />
+                <label class="btn btn-outline-primary" for="btncheck4"
+                  >ED & ESD Program Management</label
+                >
+              </div>
+              <button
+                type="submit"
+                class="btn"
+                style="background-color: #b40000; color: #fff"
+              >
+                Submit
+              </button>
+            </form>
+          </div>
+          <div class="modal-footer"></div>
+        </div>
+      </div>
+    </div>
     <div class="blue-box"></div>
 
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>

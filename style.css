@@ -406,11 +406,39 @@ p {
 .mobile {
   display: none !important;
 }
+.social-round {
+  height: 33px;
+  width: 33px;
+  background-color: #141045;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 .service-checkbox {
   display: flex;
   flex-wrap: wrap;
   padding: 10px 0;
   gap: 10px;
+}
+.row h1 {
+  color: #141045;
+  font-family: Helvetica;
+  font-size: 29px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  text-align: left;
+}
+.row li {
+  list-style: none;
+  text-align: left;
+}
+.row ul {
+  padding: 0;
+}
+.leave-message-name {
+  min-width: 350px;
 }
 @media screen and (min-width: 1044px) {
   .navbar-expand-lg .navbar-nav {
@@ -459,6 +487,13 @@ p {
     height: 60px !important;
     border-radius: 9px !important;
     border-width: 3px !important;
+  }
+  .leave-message {
+    width: 100vw;
+  }
+
+  .leave-message-name {
+    min-width: 100% !important;
   }
 }
 @media screen and (min-width: 421px) and (max-width: 504px) {

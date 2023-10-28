@@ -15,7 +15,7 @@ body {
 .nav-link {
   color: #272362;
   font-family: Istok Web;
-  font-size: 21px;
+  font-size: 15px;
   font-style: normal;
   font-weight: 400;
   line-height: normal;
@@ -38,6 +38,9 @@ body {
 }
 .social {
   color: #fff;
+}
+.worshops-cont-sect {
+  padding-left: 20px;
 }
 .pic {
   background-image: url(./different-types-of-accounting-systems.jpg.optimal.jpg);
@@ -159,18 +162,19 @@ body {
   border-radius: 30px;
 }
 .view-more {
-  /* color: #b40000; */
   font-family: Istok Web;
-  font-size: 23px;
+  font-size: 18px;
   font-style: normal;
   font-weight: 400;
   line-height: normal;
   background: #b40000;
   display: flex;
   justify-content: center;
-  border-radius: 35px;
+  border-radius: 60px;
   color: #ffff;
-  width: 286px;
+  max-width: 286px;
+  padding: 4px 10px;
+  font-weight: bold;
   text-decoration: none;
 }
 .our-services-colums .support {
@@ -232,7 +236,7 @@ body {
 p {
   color: #141045;
   font-family: Istok Web;
-  font-size: 25px;
+  font-size: 20px;
   font-style: normal;
   font-weight: 400;
   line-height: normal;
@@ -329,12 +333,21 @@ p {
   display: flex;
   justify-content: center;
 }
-.background-image {
+.background-image-our-services {
   height: 251px;
-  background-image: url("./images/slide.png");
+  background-image: url("./images/close-up-businessman-using-calculator-and-ldigita-2022-09-30-00-51-13-utc-min.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   margin-top: 90px;
+  background-position: center;
+}
+.background-image {
+  height: 251px;
+  background-image: url("./images/multiethnic-business-people-in-meeting-accountant-2023-03-29-18-03-09-utc-min.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin-top: 90px;
+  background-position: center;
 }
 .blue-red {
   display: flex;

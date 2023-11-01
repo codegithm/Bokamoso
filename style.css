@@ -21,6 +21,12 @@ body {
   line-height: normal;
   text-transform: uppercase;
 }
+a {
+  text-decoration: none;
+  color: #fff;
+  font-weight: bold;
+  cursor: pointer;
+}
 .row {
   padding-top: 90px;
   max-width: 100vw;
@@ -38,6 +44,9 @@ body {
 }
 .social {
   color: #fff;
+}
+.section-header {
+  font-size: 32px;
 }
 .worshops-cont-sect {
   padding-left: 20px;
@@ -156,8 +165,8 @@ body {
   flex-wrap: wrap;
 }
 .our-services-colums .card {
-  width: 239px;
-  height: 188px;
+  width: 194px;
+  height: 152px;
   flex-shrink: 0;
   border-radius: 30px;
 }
@@ -206,12 +215,13 @@ body {
   flex-direction: column;
   justify-content: space-between;
   padding: 0px 20px;
+  max-width: 600px;
 }
 .our-services-colums .column2 {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  max-width: 633px;
+  max-width: 490px;
 }
 .hire-us {
   background: #b40000;
@@ -236,7 +246,7 @@ body {
 p {
   color: #141045;
   font-family: Istok Web;
-  font-size: 20px;
+  font-size: 16px;
   font-style: normal;
   font-weight: 400;
   line-height: normal;
@@ -282,11 +292,11 @@ p {
   line-height: normal;
 }
 .worksop-section .card h5 {
-  font-size: 42px;
+  font-size: 22px;
   font-weight: 700;
 }
 .worksop-section .card p {
-  font-size: 18px;
+  font-size: 16px;
   font-weight: 400;
 }
 .worksop-section {
@@ -576,7 +586,7 @@ p {
     padding-right: 40px;
   }
   .about_us p {
-    font-size: 17px !important;
+    font-size: 16px !important;
   }
 }
 @media screen and (max-width: 373px) {
@@ -608,7 +618,7 @@ p {
 }
 @media screen and (max-width: 989px) {
   .worksop-section .card h5 {
-    font-size: 25px !important;
+    font-size: 22px !important;
   }
   .worksop-section .card p,
   .view-more {
@@ -618,7 +628,7 @@ p {
     width: 222px;
   }
   p {
-    font-size: 19px;
+    font-size: 16px;
   }
 
   .our-services-colums .card {
@@ -628,7 +638,7 @@ p {
     border-radius: 30px;
   }
   .our-services-colums .card p {
-    font-size: 18px;
+    font-size: 16px;
   }
 
   .about_us,

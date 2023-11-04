@@ -63,6 +63,12 @@ a {
   padding-top: 30px;
   color: #fff;
 }
+.support-content h1 {
+  font-size: 20px;
+}
+.support-content li ul li {
+  font-size: 16px;
+}
 .container-fluid img {
   width: 120px;
 }
@@ -165,8 +171,8 @@ a {
   flex-wrap: wrap;
 }
 .our-services-colums .card {
-  width: 194px;
-  height: 152px;
+  width: 295px;
+  height: 129px;
   flex-shrink: 0;
   border-radius: 30px;
 }
@@ -208,7 +214,7 @@ a {
   width: 50%;
 }
 .our-services-colums .column2 {
-  gap: 10px;
+  gap: 20px;
 }
 .our-services-colums .column1 {
   display: flex;
@@ -221,7 +227,6 @@ a {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  max-width: 490px;
 }
 .hire-us {
   background: #b40000;
@@ -469,9 +474,9 @@ p {
   }
 }
 @media screen and (max-width: 991px) {
-  .navbar-brand {
+  /* .navbar-brand {
     margin-right: 150px !important;
-  }
+  } */
 
   .hire-us {
     display: none !important;
@@ -485,7 +490,7 @@ p {
 }
 @media screen and (max-width: 653px) {
   .mobile {
-    display: block;
+    display: block !important;
   }
   .desktop {
     display: none;
@@ -590,10 +595,10 @@ p {
   }
 }
 @media screen and (max-width: 373px) {
-  .our-services-colums .card {
+  /* .our-services-colums .card {
     width: 168px !important;
     height: 121px !important;
-  }
+  } */
   .our-services-colums .card p {
     font-size: 15px !important;
   }
@@ -631,12 +636,6 @@ p {
     font-size: 16px;
   }
 
-  .our-services-colums .card {
-    width: 189px;
-    height: 148px;
-    flex-shrink: 0;
-    border-radius: 30px;
-  }
   .our-services-colums .card p {
     font-size: 16px;
   }
@@ -655,10 +654,24 @@ p {
     height: auto;
   }
 }
-@media screen and (min-width: 373px) and (max-width: 653px) {
+@media screen and (min-width: 1006px) and (max-width: 1220px) {
   .our-services-colums .card {
-    width: 224px !important;
-    height: 143px !important;
+    width: 232px;
+    height: 109px;
+  }
+}
+@media screen and (min-width: 652px) and (max-width: 874px) {
+  .our-services-colums .card {
+    width: 47%;
+    height: 124px;
+  }
+}
+@media screen and (max-width: 607px) {
+  .our-services-colums .card {
+    width: 47%;
+  }
+  .our-services-colums .column2 {
+    gap: 9px;
   }
 }
 @media screen and (max-width: 653px) {
@@ -669,6 +682,9 @@ p {
   .our-services-colums .column1,
   .our-services-colums .column2 {
     width: 100%;
+  }
+  .our-services-colums .column1 {
+    max-width: 445px;
   }
   .about_spacer,
   .about_us p {
@@ -734,16 +750,15 @@ p {
     height: auto;
   }
 }
-@media screen and (min-width: 373px) and (max-width: 472px) {
+@media screen and (min-width: 875px) and (max-width: 1006px) {
   .our-services-colums .card {
-    width: 182px !important;
-    height: 125px !important;
+    width: 202px;
+    height: 101px;
   }
 }
-@media screen and (min-width: 373px) and (max-width: 767px) {
-  .our-services-colums .card {
-    width: 172px;
-    height: 131px;
+@media screen and (min-width: 373px) and (max-width: 875px) {
+  .our-services-colums .column2 {
+    gap: 6px;
   }
 }
 @media screen and (max-width: 767px) {

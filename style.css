@@ -51,6 +51,9 @@ a {
 .worshops-cont-sect {
   padding-left: 20px;
 }
+.about-us-column {
+  padding-left: 20px;
+}
 .pic {
   background-image: url(./different-types-of-accounting-systems.jpg.optimal.jpg);
   background-position: center;
@@ -485,6 +488,11 @@ p {
 }
 .leave-message-name {
   min-width: 350px;
+}
+@media screen and (min-width: 980px) {
+  .slider-text {
+    bottom: 148px;
+  }
 }
 @media screen and (min-width: 1044px) {
   .navbar-expand-lg .navbar-nav {

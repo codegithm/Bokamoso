@@ -200,6 +200,23 @@ a {
   border-radius: 30px;
   border: 9px solid #b40000;
 }
+.slider-text {
+  position: absolute;
+  bottom: 20px;
+  padding: 10px;
+  color: #fff;
+  z-index: 2;
+  font-size: 60px;
+}
+.overlay {
+  background: black;
+  position: absolute;
+  bottom: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0.5;
+  z-index: 1;
+}
 .our-services-colums .workshop {
   border-radius: 30px;
   border: 9px solid #141045;
@@ -231,8 +248,8 @@ a {
 .hire-us {
   background: #b40000;
   color: #ffff;
-  width: 192px;
-  height: 131px;
+  width: 108px;
+  height: 120px;
   border: 0;
   flex-shrink: 0;
   position: fixed;
@@ -318,6 +335,7 @@ p {
 
 .about-us-column {
   display: flex;
+  padding-right: 20px;
 }
 
 .services-button-cont .card {
@@ -473,6 +491,16 @@ p {
     gap: 50px;
   }
 }
+@media screen and (max-width: 1077px) {
+  .slider-text {
+    font-size: 50px;
+  }
+}
+@media screen and (max-width: 781px) {
+  .slider-text {
+    font-size: 38px;
+  }
+}
 @media screen and (max-width: 991px) {
   /* .navbar-brand {
     margin-right: 150px !important;
@@ -579,6 +607,10 @@ p {
   }
   .services-button {
     gap: 9px !important;
+  }
+  .slider-text {
+    bottom: 1px;
+    font-size: 20px;
   }
 }
 @media screen and (min-width: 989px) {

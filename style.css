@@ -422,6 +422,9 @@ p {
   color: #fff;
   font-family: Istok Web;
 }
+.support-content ul {
+  max-width: 327px;
+}
 .red-bg {
   background: #b40000;
 }

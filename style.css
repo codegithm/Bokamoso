@@ -203,7 +203,7 @@ a {
   border-radius: 30px;
   border: 9px solid #b40000;
 }
-.training {
+.training a {
   text-decoration: underline !important;
 }
 .slider-text {

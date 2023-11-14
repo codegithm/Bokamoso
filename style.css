@@ -203,6 +203,9 @@ a {
   border-radius: 30px;
   border: 9px solid #b40000;
 }
+.training {
+  text-decoration: underline !important;
+}
 .slider-text {
   position: absolute;
   bottom: 20px;

@@ -380,6 +380,14 @@ p {
   margin-top: 90px;
   background-position: center;
 }
+.background-image-contact {
+  height: 251px;
+  background-image: url("./images/IMG-20231116-WA0013.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin-top: 90px;
+  background-position: center;
+}
 .background-image {
   height: 251px;
   background-image: url("./images/multiethnic-business-people-in-meeting-accountant-2023-03-29-18-03-09-utc-min.jpg");

@@ -332,11 +332,28 @@ p {
   gap: 10px;
   justify-content: center;
 }
+.footer-ul {
+  padding: 0;
+}
+.footer-ul li a,
+.footer-ul li {
+  color: #fff;
+  list-style: none;
+}
+.blue-box h2 {
+  font-size: 20px !important;
+}
 .blue-box {
   width: 100vw;
-  height: 91px;
+  /* height: 91px; */
   flex-shrink: 0;
   background: #141045;
+  padding: 40px 20px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  gap: 32px;
+  flex-wrap: wrap;
 }
 
 .about-us-column {

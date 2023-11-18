@@ -351,7 +351,7 @@ p {
   padding: 40px 20px;
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
+  justify-content: space-around;
   gap: 32px;
   flex-wrap: wrap;
 }
@@ -672,6 +672,9 @@ p {
   } */
   .our-services-colums .card p {
     font-size: 15px !important;
+  }
+  .blue-box {
+    justify-content: space-between !important;
   }
 }
 @media screen and (max-width: 880px) {

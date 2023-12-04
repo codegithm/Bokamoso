@@ -160,7 +160,7 @@
           style="margin-top: 20px; max-width: 500px"
           class="leave-message col-12 col-lg-9 col-md-9 col-sm-12"
         >
-          <form name="hire-us">
+          <form name="contact-us" id="contact-us">
             <div class="mb-3">
               <input
                 type="text"
@@ -168,6 +168,7 @@
                 id="exampleInputEmail1"
                 aria-describedby="emailHelp"
                 placeholder="Name & Surname"
+                name="name"
                 required
               />
             </div>
@@ -177,6 +178,7 @@
                 class="form-control"
                 id="exampleInputPassword1"
                 placeholder="Email"
+                name="email"
                 required
               />
             </div>
@@ -186,6 +188,7 @@
                 class="form-control"
                 id="exampleInputPassword1"
                 placeholder="Phone Number"
+                name="number"
                 required
               />
             </div>
@@ -195,6 +198,7 @@
                 placeholder="Leave a message here"
                 id="floatingTextarea"
                 style="min-height: 200px"
+                name="message"
               ></textarea>
             </div>
             <div style="display: flex; justify-content: flex-end">
@@ -234,7 +238,7 @@
             ></button>
           </div>
           <div class="modal-body">
-            <form name="hire-us">
+            <form id="hire-us" name="hire-us">
               <div class="input-group mb-3">
                 <input
                   type="text"
@@ -243,6 +247,7 @@
                   aria-label="First Name"
                   aria-describedby="basic-addon2"
                   required
+                  name="name"
                 />
               </div>
               <div class="input-group mb-3">
@@ -253,6 +258,7 @@
                   aria-label="Last Name"
                   aria-describedby="basic-addon2"
                   required
+                  name="lastname"
                 />
               </div>
               <div class="input-group mb-3">
@@ -264,6 +270,7 @@
                   aria-describedby="basic-addon2"
                   required
                   minlength="10"
+                  name="number"
                 />
               </div>
               <div class="input-group mb-3">
@@ -274,6 +281,7 @@
                   aria-label="Email Address"
                   aria-describedby="basic-addon2"
                   required
+                  name="email"
                 />
               </div>
               <div class="service-checkbox">
@@ -282,6 +290,8 @@
                   class="btn-check"
                   id="btncheck1"
                   autocomplete="off"
+                  name="backoffice"
+                  value="Back Office Support"
                 />
                 <label class="btn btn-outline-primary" for="btncheck1"
                   >Back Office Support</label
@@ -291,6 +301,8 @@
                   class="btn-check"
                   id="btncheck2"
                   autocomplete="off"
+                  name="readiness"
+                  value="Investors Readiness Assessments"
                 />
                 <label class="btn btn-outline-primary" for="btncheck2"
                   >Investors Readiness Assessments</label
@@ -300,6 +312,8 @@
                   class="btn-check"
                   id="btncheck3"
                   autocomplete="off"
+                  name="trainings"
+                  value="Trainings & Workshops"
                 />
                 <label class="btn btn-outline-primary" for="btncheck3"
                   >Trainings & Workshops</label
@@ -309,6 +323,8 @@
                   class="btn-check"
                   id="btncheck4"
                   autocomplete="off"
+                  name="management"
+                  value="ED & ESD Program Management"
                 />
                 <label class="btn btn-outline-primary" for="btncheck4"
                   >ED & ESD Program Management</label
@@ -416,6 +432,13 @@
       integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
       crossorigin="anonymous"
     ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.20.0/jquery.validate.min.js"
+      integrity="sha512-WMEKGZ7L5LWgaPeJtw9MBM4i5w5OSBlSjTjCtSnvFJGSVD26gE5+Td12qN5pvWXhuWaWcVwF++F7aqu9cvqP0A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script type="text/javascript" src="/script.js"></script>
     <script>
       var currentSection = "office";
       $(".services-button-cont .card").click(function () {
